@@ -1,4 +1,349 @@
 * {
-  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/woodwall.jpg);
+}
+
+body header nav {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body header nav .menu-logo {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+}
+
+body header nav .menu-logo img {
+  display: none;
+}
+
+body header nav .menu-logo h3 {
+  color: #e54880;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+body header nav .menu {
+  width: 100%;
+  height: 50px;
+  visibility: hidden;
+  margin-top: 10px;
+}
+
+body header nav .menu span {
+  font-weight: bold;
+}
+
+body header .logo-container {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .logo-container .symbol {
+  width: 200px;
+  height: 230px;
+}
+
+body header .logo-container .symbol img {
+  width: 200px;
+}
+
+body header .logo-container .logo img {
+  width: 180px;
+}
+
+body header .logo-container .arrow {
+  margin-top: 50px;
+}
+
+body header .logo-container .arrow img {
+  width: 50px;
+  cursor: pointer;
+}
+
+body .container {
+  margin-bottom: -5px;
+}
+
+body .container .our-story, body .container .fresh-fare, body .container .local-distillation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .our-story article, body .container .fresh-fare article, body .container .local-distillation article {
+  background-image: url(../assets/textchickenbg.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .our-story article .text-container, body .container .fresh-fare article .text-container, body .container .local-distillation article .text-container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+body .container .our-story article .text-container .circle, body .container .fresh-fare article .text-container .circle, body .container .local-distillation article .text-container .circle {
+  width: 60px;
+}
+
+body .container .our-story article .text-container .circle img, body .container .fresh-fare article .text-container .circle img, body .container .local-distillation article .text-container .circle img {
+  width: 100%;
+}
+
+body .container .our-story article .text-container h2, body .container .fresh-fare article .text-container h2, body .container .local-distillation article .text-container h2 {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  margin-bottom: 0px;
+}
+
+body .container .our-story article .text-container .article-line, body .container .fresh-fare article .text-container .article-line, body .container .local-distillation article .text-container .article-line {
+  margin-bottom: 5px;
+}
+
+body .container .our-story article .text-container span, body .container .fresh-fare article .text-container span, body .container .local-distillation article .text-container span {
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+}
+
+body .container .our-story article .text-container p, body .container .fresh-fare article .text-container p, body .container .local-distillation article .text-container p {
+  font-weight: bold;
+  color: #e54880;
+}
+
+body .container .our-story .food-image, body .container .fresh-fare .food-image, body .container .local-distillation .food-image {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+body .container .our-story .food-image img, body .container .fresh-fare .food-image img, body .container .local-distillation .food-image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+  body .container .our-story article .text-container, body .container .fresh-fare article .text-container, body .container .local-distillation article .text-container {
+    padding: 20px;
+  }
+}
+
+body .container .bottom-image {
+  width: 100%;
+}
+
+body .container .bottom-image img {
+  width: 100%;
+}
+
+body footer {
+  background-image: url(../assets/textchickenbg.jpg);
+  width: 100%;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body footer .info {
+  width: 80%;
+  min-height: 150px;
+  margin-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px;
+}
+
+body footer .info .footer-logo {
+  width: 100px;
+}
+
+body footer .info .line {
+  width: 8%;
+  margin-bottom: 10px;
+}
+
+body footer .info p {
+  margin: 0px;
+}
+
+body footer .media {
+  width: 100%;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 12px;
+}
+
+body footer .media img {
+  width: 100px;
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    background-image: url(../assets/brickwall.jpg);
+    background-attachment: fixed;
+  }
+  body header {
+    width: 960px;
+    height: 80vh;
+    background-image: url(../assets/backgroundplankkk.png);
+    margin-top: 40px;
+  }
+  body header nav .menu-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2px;
+  }
+  body header nav .menu-logo img {
+    display: block;
+    width: 20%;
+    margin-left: 20px;
+  }
+  body header nav .menu-logo img:last-child {
+    width: 30px;
+    margin-left: 50px;
+  }
+  body header nav .menu-logo h3 {
+    display: none;
+  }
+  body header nav .menu {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  body header nav .menu span {
+    cursor: pointer;
+    margin: 5px;
+  }
+  body .container {
+    width: 960px;
+  }
+  body .container article {
+    width: 60%;
+  }
+  body .container .our-story {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container .fresh-fare {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body .container .local-distillation {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body .container .bottom-image {
+    width: 100%;
+  }
+  body .container .bottom-image img {
+    width: 100%;
+  }
+  body footer {
+    width: 960px;
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

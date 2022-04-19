@@ -1,0 +1,56 @@
+
+@mixin content {
+        article{
+            background-image: url(../assets/textchickenbg.jpg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .text-container {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 30px;
+            .circle{
+                width: 60px;
+                img{
+                    width: 100%;
+                }
+            }
+            h2{
+                font-weight: bolder;
+                font-size: 1.4rem;
+                margin-bottom: 0px;
+            }
+            .article-line{
+                margin-bottom: 5px;
+            }
+            span{
+                text-align: center;
+                font-style: italic;
+                font-size: 12px;
+            }
+            p{
+                font-weight: bold;
+                // color: #e54880;
+                color: #e54880;            }
+        }
+        }
+        .food-image{
+            width: 100%;
+            margin-bottom: -5px;
+            img{
+                width: 100%;
+            }
+        }
+        @media screen and(min-width: 960px) {
+            article{
+                .text-container{
+                    padding: 20px;
+                }
+            }
+        }
+    }

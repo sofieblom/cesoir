@@ -1,3 +1,196 @@
-* {
-    margin: 0 auto;
+@import "mixins";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+        height: 100vh;
+        width: 100%;
+        background-image: url(../assets/woodwall.jpg);
+        nav{
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            .menu-logo{
+                margin-top: 10px;
+                width: 100%;
+                height: 50px;
+                img{
+                    display: none;
+                }
+               h3{
+                color: #e54880;
+                cursor: pointer;
+                margin-left: 20px;
+                // padding: 10px;
+            }
+            }
+            .menu{
+                width: 100%;
+                height: 50px;
+                visibility: hidden;
+                margin-top: 10px;
+                span{
+                    font-weight: bold;
+                }
+            }
+
+        }
+        .logo-container{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .symbol{
+                width: 200px;
+                height: 230px;
+                img{
+                    width: 200px;
+                }
+            }
+            .logo{
+                img{
+                    width: 180px;
+                }
+            }
+            .arrow{
+                margin-top: 50px;
+                img {
+                    width: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .container{
+        margin-bottom: -5px;
+        .our-story, .fresh-fare, .local-distillation{
+            display: flex;
+            flex-direction: column;
+            @include content;
+        }
+        .bottom-image{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    footer{
+        background-image: url(../assets/textchickenbg.jpg);
+        width: 100%;
+        min-height: 150px;
+        display: flex;
+        .info{
+            width: 80%;
+            min-height: 150px;
+            margin-left: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 12px;
+            .footer-logo{
+                width: 100px;
+            }
+            .line{
+                width: 8%;
+                margin-bottom: 10px;
+            }
+            p{
+                margin: 0px;
+            }
+        }
+        .media{
+            width: 100%;
+            min-height: 150px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding: 12px;
+            img{
+                width: 100px;
+            }
+        }
+        }
+}
+
+@media screen and(min-width: 960px) {
+    body{
+        background-image: url(../assets/brickwall.jpg);
+        background-attachment: fixed;
+        header{
+            width: 960px;
+            height: 80vh;
+            // background-image: url(../assets/woodwall.jpg);
+            background-image: url(../assets/backgroundplankkk.png);
+
+            margin-top: 40px;
+            nav{
+                .menu-logo{
+                    display: flex;
+                    flex-direction: column;
+                    gap:2px;
+                    img{
+                        display: block;
+                        width: 20%;
+                        margin-left: 20px;
+
+                    }
+                    img:last-child{
+                        width: 30px;
+                        margin-left: 50px;
+                    }
+                    h3{
+                        display: none;                    
+                        }
+                }
+                .menu{
+                    visibility:visible;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 5px;
+                    span{
+                        cursor: pointer;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+        .container{
+            width: 960px;
+            // margin-bottom: -5px;
+            article{
+                width: 60%;
+            }
+            .our-story{
+                flex-direction: row;
+            }
+            .fresh-fare{
+                flex-direction: row-reverse;
+            }
+
+            .local-distillation{
+                flex-direction: row;
+            }
+            .bottom-image{
+                width: 100%;
+                img{
+                    width:100%;
+                }
+            }
+        }
+        footer{
+            width: 960px;
+            margin-bottom: 40px;
+            
+        }
+    }
+
 }
