@@ -305,7 +305,7 @@ body footer .media img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 5px;
+    gap: 20px;
   }
   body header nav .menu span {
     cursor: pointer;
